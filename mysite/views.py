@@ -39,7 +39,7 @@ def analyze(request):
         analyzed = analyzed.capitalize()
 
     if newlineremove == "on":
-        analyzed = analyzed.replace("\n", "").replace("\r", "")
+        analyzed = analyzed.replace("\n", "").replace("\r", " ")
 
     if spaceremover == "on":
         analyzed = " ".join(analyzed.split())
